@@ -21,11 +21,11 @@ console.log(output);
 
 addEventListener("fetch", (event) => {
   event.respondWith(
-    new Response(output, {
+    new Response(play(), {
       status: 200,
       headers: {
         server: "denosr",
-        "content-type": "text/plain",
+        "content-type": "text/html; charset=utf-8",
       },
     }),
   );
