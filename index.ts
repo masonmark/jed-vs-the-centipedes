@@ -12,7 +12,7 @@ const play = () => {
       result += '🐛'
     }
   }
-  return result + "<br><br><button onclick='window.open(window.location.href, \"_blank\")>👾 PLAY AGAIN</button>";
+  return result + "<br><br><button onclick='window.location.reload();'>👾 PLAY AGAIN</button>";
 }
 
 const output = play();
